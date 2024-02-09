@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Facebook-clone/static/css/main.073c9b0a.css",
-    "main.js": "/Facebook-clone/static/js/main.6f670a2d.js",
+    "main.js": "/Facebook-clone/static/js/main.a4a68610.js",
     "static/js/787.28cb0dcd.chunk.js": "/Facebook-clone/static/js/787.28cb0dcd.chunk.js",
     "static/media/pool.png": "/Facebook-clone/static/media/pool.38465359c6750b8dfbf9.png",
     "static/media/apple.jpeg": "/Facebook-clone/static/media/apple.f19e6877232b696992c4.jpeg",
@@ -9,11 +9,11 @@
     "static/media/Facebook-logo.png": "/Facebook-clone/static/media/Facebook-logo.866d8d2247aaac78d93b.png",
     "index.html": "/Facebook-clone/index.html",
     "main.073c9b0a.css.map": "/Facebook-clone/static/css/main.073c9b0a.css.map",
-    "main.6f670a2d.js.map": "/Facebook-clone/static/js/main.6f670a2d.js.map",
+    "main.a4a68610.js.map": "/Facebook-clone/static/js/main.a4a68610.js.map",
     "787.28cb0dcd.chunk.js.map": "/Facebook-clone/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.6f670a2d.js"
+    "static/js/main.a4a68610.js"
   ]
 }
