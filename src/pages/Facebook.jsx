@@ -55,9 +55,9 @@ const Facebook = () => {
     <Box
       sx={{
         backgroundColor: "#18191A",
-        mt: 8,
+        mt: "70px",
         display: "flex",
-        paddingBottom: 200,
+        height: "4400px",
       }}
     >
       {/***********
@@ -244,39 +244,64 @@ const Facebook = () => {
               sx={{ mt: 2, borderWidth: 1, backgroundColor: "#B8BBBF" }}
             />
 
-            <Stack direction="row" spacing={0}>
-              <List
+            <List
+              sx={{
+                display: `flex`,
+                width: `100%`,
+                justifyContent: `space-between`,
+                marginBottom: -2,
+              }}
+            >
+              <ListItemButton
                 sx={{
-                  display: `flex`,
-                  width: `100%`,
-                  justifyContent: `space-between`,
-                  marginBottom: -2,
+                  borderRadius: 5,
+                  display: "flex",
+                  justifyContent: "center",
                 }}
               >
-                <ListItemButton sx={{ borderRadius: 5 }}>
-                  <ListItemIcon>
-                    <VideocamIcon sx={{ fontSize: 40, color: "#B8BBBF" }} />
-                  </ListItemIcon>
-                  <Typography sx={{ color: "#B8BBBF" }}>Live video</Typography>
-                </ListItemButton>
-                <ListItemButton sx={{ borderRadius: 5, color: "#B8BBBF" }}>
-                  <ListItemIcon>
-                    <InsertPhotoIcon sx={{ fontSize: 40, color: "#B8BBBF" }} />
-                  </ListItemIcon>
-                  <Typography sx={{ color: "#B8BBBF" }}>Photo/video</Typography>
-                </ListItemButton>
-                <ListItemButton sx={{ borderRadius: 5 }}>
+                <ListItemIcon>
+                  <VideocamIcon
+                    sx={{ fontSize: 30, color: "#B8BBBF", padding: "5px" }}
+                  />
+                </ListItemIcon>
+                <Typography sx={{ color: "#B8BBBF", whiteSpace: "nowrap" }}>
+                  Live video
+                </Typography>
+              </ListItemButton>
+              <ListItemButton
+                sx={{
+                  borderRadius: 5,
+                  color: "#B8BBBF",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <ListItemIcon>
+                  <InsertPhotoIcon
+                    sx={{ fontSize: 30, color: "#B8BBBF", padding: "5px" }}
+                  />
+                </ListItemIcon>
+                <Typography sx={{ color: "#B8BBBF" }}>Photo/video</Typography>
+              </ListItemButton>
+              {isMediumScreen && (
+                <ListItemButton
+                  sx={{
+                    borderRadius: 5,
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
                   <ListItemIcon>
                     <EmojiEmotionsIcon
-                      sx={{ fontSize: 40, color: "#B8BBBF" }}
+                      sx={{ fontSize: 30, color: "#B8BBBF", padding: "5px" }}
                     />
                   </ListItemIcon>
                   <Typography sx={{ color: "#B8BBBF" }}>
                     Feeling/activity
                   </Typography>
                 </ListItemButton>
-              </List>
-            </Stack>
+              )}
+            </List>
           </Box>
 
           <Box sx={{ width: `100%` }}>

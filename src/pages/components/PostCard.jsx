@@ -14,6 +14,8 @@ import {
   ListItemIcon,
   TextField,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import ClearIcon from "@mui/icons-material/Clear";
@@ -29,6 +31,8 @@ import CollectionsIcon from "@mui/icons-material/Collections";
 import React from "react";
 //hello
 const PostCard = ({ title, description, subheader, image, video }) => {
+  const theme = useTheme();
+
   return (
     <Card
       sx={{
@@ -75,9 +79,6 @@ const PostCard = ({ title, description, subheader, image, video }) => {
           height="500"
           image={image}
           alt="Paella dish"
-          sx={{
-            objectFit: `contain`,
-          }}
         />
       )}
       {video && (
@@ -117,6 +118,10 @@ const PostCard = ({ title, description, subheader, image, video }) => {
             paddingTop: "3px",
             paddingBottom: "3px",
             color: "#B8BBBF",
+            [theme.breakpoints.down("md")]: {
+              paddingLeft: 0,
+              paddingRight: 0,
+            },
           }}
         >
           <ListItemButton sx={{ display: "flex", justifyContent: "center" }}>
